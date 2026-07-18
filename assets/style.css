@@ -126,6 +126,13 @@ h1 {
 section article,
 section>p,
 .achievement-card{
+    section article ul{
+    background:none;
+    padding:0 0 0 20px;
+    margin:10px 0;
+    border-radius:0;
+    box-shadow:none;
+}
 
     background:white;
     padding:25px;
