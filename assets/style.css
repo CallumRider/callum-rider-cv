@@ -335,3 +335,30 @@ section article ul {
     border-radius:30px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
+.cadet-carousel{
+    background:white;
+    padding:25px;
+    margin:25px 0;
+    border-radius:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.cadet-carousel img{
+    width:100%;
+    max-width:700px;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.carousel-buttons button{
+    background:#12263A;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    margin:15px 5px 0;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:20px;
+}
