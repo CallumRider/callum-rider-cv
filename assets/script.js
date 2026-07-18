@@ -1,3 +1,4 @@
+console.log("JS WORKING");
 window.addEventListener("load", () => {
 
 const track = document.getElementById("carousel-track");
