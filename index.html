@@ -201,14 +201,26 @@ function downloadFile(event) {
         </p>
 
     </article>
-    <div class="cadet-carousel">
+   <div class="cadet-carousel">
 
-    <img id="cadet-photo" src="assets/images/cadet1.jpg" alt="Cadet activity">
+    <div class="carousel-track" id="carousel-track">
 
-    <div class="carousel-buttons">
-        <button onclick="changePhoto(-1)">❮</button>
-        <button onclick="changePhoto(1)">❯</button>
+        <img src="assets/images/cadet1.jpg" alt="">
+        <img src="assets/images/cadet2.jpg" alt="">
+        <img src="assets/images/cadet3.jpg" alt="">
+        <img src="assets/images/cadet4.jpg" alt="">
+        <img src="assets/images/cadet5.jpg" alt="">
+        <img src="assets/images/cadet6.jpg" alt="">
+        <img src="assets/images/cadet7.jpg" alt="">
+
     </div>
+
+    <button class="carousel-arrow left" onclick="changePhoto(-1)">❮</button>
+    <button class="carousel-arrow right" onclick="changePhoto(1)">❯</button>
+
+    <div class="carousel-dots" id="carousel-dots"></div>
+
+</div>
 
 </div>
 
