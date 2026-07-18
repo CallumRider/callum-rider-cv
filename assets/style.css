@@ -331,6 +331,9 @@ section article ul {
 #education ul{
     background:white;
     padding:25px;
+    margin:15px 0;
+    border-radius:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .cadet-carousel{
