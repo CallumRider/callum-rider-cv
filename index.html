@@ -501,40 +501,31 @@ function downloadFile(event) {
 </main>
 
 <footer>
-
     <p>&copy; 2026 Callum Rider. All Rights Reserved.</p>
-
 </footer>
-<script>
-const achievementButtons = document.querySelectorAll(".achievement-toggle");
 
-achievementButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-       <script src="./assets/script.js"></script>
+<script src="./assets/script.js"></script>
 
 <script>
 const achievementButtons = document.querySelectorAll(".achievement-toggle");
 
 achievementButtons.forEach(button => {
-
     button.addEventListener("click", () => {
-
         const card = button.parentElement;
         const info = card.querySelector(".achievement-info");
 
         card.classList.toggle("active");
 
-        if (card.classList.contains("active")) {
+        if(card.classList.contains("active")){
             info.style.maxHeight = info.scrollHeight + "px";
             button.querySelector("span").textContent = "▲";
         } else {
             info.style.maxHeight = null;
             button.querySelector("span").textContent = "▼";
         }
-
     });
-
 });
 </script>
+
+</body>
+</html>
