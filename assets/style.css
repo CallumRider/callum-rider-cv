@@ -319,3 +319,11 @@ font-size:2rem;
 .achievement-card {
     transition: transform 0.3s ease;
 }
+
+section article ul {
+    background: transparent !important;
+    padding: 0 0 0 20px !important;
+    margin: 10px 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
