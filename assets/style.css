@@ -362,3 +362,69 @@ section article ul {
     cursor:pointer;
     font-size:20px;
 }
+.cadet-carousel{
+    position:relative;
+    max-width:800px;
+    margin:30px auto;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.carousel-track{
+    display:flex;
+    transition:transform .6s ease;
+}
+
+.carousel-track img{
+    width:100%;
+    flex-shrink:0;
+    height:450px;
+    object-fit:cover;
+}
+
+.carousel-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(18,38,58,.8);
+    color:white;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:24px;
+}
+
+.left{
+    left:15px;
+}
+
+.right{
+    right:15px;
+}
+
+.carousel-dots{
+    position:absolute;
+    bottom:15px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.carousel-dots span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:white;
+    opacity:.4;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.carousel-dots span.active{
+    opacity:1;
+    transform:scale(1.3);
+}
