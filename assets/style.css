@@ -358,7 +358,7 @@ section article ul {
     min-width:100%;
     width:100%;
     height:450px;
-    object-fit:cover;
+    object-fit:contain;
     flex-shrink:0;
 }
 
