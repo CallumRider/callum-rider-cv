@@ -417,20 +417,3 @@ section article ul {
 .carousel-dots span.active{
     opacity:1;
     transform:scale(1.3);
-.nav-logo{
-    width:40px !important;
-    height:40px !important;
-    max-width:40px;
-    object-fit:cover;
-    border-radius:50%;
-}
-
-.nav-brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.nav-brand h1{
-    margin:0;
-}
