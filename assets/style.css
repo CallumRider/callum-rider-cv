@@ -287,16 +287,21 @@ font-size:2rem;
 
 }
 
-.achievement-toggle {
-    width: 100%;
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-size: inherit;
-    color: inherit;
+.achievement-toggle{
+    width:100%;
+    background:none;
+    border:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:inherit;
+    color:inherit;
+    padding:5px 10px;
+}
+
+.achievement-toggle h3{
+    text-align:left;
 }
 
 .achievement-toggle span {
@@ -305,10 +310,19 @@ font-size:2rem;
 }
 
 
-.achievement-info {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease;
+.achievement-info{
+    overflow:hidden;
+    max-height:0;
+    transition:max-height 0.5s ease;
+
+    text-align:left;
+    padding:0 10px;
+}
+.achievement-info p{
+    margin-top:18px;
+    line-height:1.8;
+    text-align:left;
+    padding:0 10px 15px;
 }
 
 
