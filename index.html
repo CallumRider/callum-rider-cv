@@ -512,6 +512,30 @@ achievementButtons.forEach(button => {
     });
 });
 </script>
+<!-- AI Chat -->
+<div class="chat-widget">
 
+    <button class="chat-button" onclick="toggleChat()">
+        💬
+    </button>
+
+    <div class="chat-box" id="chat-box">
+
+        <div class="chat-header">
+            🤖 Ask Callum
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <p>Hi! Ask me anything about Callum's experience, projects or qualifications.</p>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" placeholder="Ask a question..." id="chat-input">
+            <button>➤</button>
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
