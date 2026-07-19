@@ -418,3 +418,21 @@ section article ul {
     opacity:1;
     transform:scale(1.3);
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-circle{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#12263A;
+    color:white;
+    border:2px solid #67c1ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
