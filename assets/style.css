@@ -976,3 +976,9 @@ pointer-events:none;
     margin:15px auto 0;
     border-radius:10px;
 }
+section h3 i{
+
+    color:#67c1ff;
+    margin-right:10px;
+
+}
