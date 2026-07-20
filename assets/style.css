@@ -437,11 +437,16 @@ section article ul {
 
 #stats{
 
-    background:#12263A;
-    padding:50px 8%;
-    margin:0;
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(103,193,255,.15),
+        transparent 40%
+    ),
+    #12263A;
 
 }
+
 
 
 .stats-container{
@@ -457,41 +462,13 @@ section article ul {
 }
 .stat-card{
 
-    background:
-    linear-gradient(
-        145deg,
-        rgba(255,255,255,0.18),
-        rgba(255,255,255,0.05)
-    );
+    background:rgba(255,255,255,0.08);
 
-    border:1px solid rgba(255,255,255,0.25);
+    border:1px solid rgba(255,255,255,0.35);
 
-    backdrop-filter:blur(20px);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
 
-    -webkit-backdrop-filter:blur(20px);
-
-    width:220px;
-    min-height:180px;
-
-    padding:35px 25px;
-
-    border-radius:30px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    text-align:center;
-
-    color:white;
-
-    position:relative;
-
-    overflow:hidden;
-
-    transition:.4s;
-
-}
     width:220px;
     min-height:180px;
 
@@ -551,16 +528,15 @@ section article ul {
 
 .stat-card:hover{
 
-    transform:translateY(-12px) scale(1.03);
+    transform:translateY(-15px) scale(1.05);
 
     border-color:#67c1ff;
 
     box-shadow:
-    0 0 25px rgba(103,193,255,.35);
+    0 0 30px rgba(103,193,255,.5);
 
 }
 
-}
 
 
 .stat-card h3{
