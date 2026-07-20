@@ -982,3 +982,12 @@ section h3 i{
     margin-right:10px;
 
 }
+section article p,
+section article li,
+.achievement-info p,
+#about p,
+#education li{
+
+    font-family:"Inter", Arial, sans-serif;
+
+}
