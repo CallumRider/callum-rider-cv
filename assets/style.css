@@ -459,15 +459,39 @@ section article ul {
 
     background:
     linear-gradient(
-    145deg,
-    rgba(255,255,255,0.12),
-    rgba(255,255,255,0.04)
+        145deg,
+        rgba(255,255,255,0.18),
+        rgba(255,255,255,0.05)
     );
 
-    border:1px solid rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.25);
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(20px);
 
+    -webkit-backdrop-filter:blur(20px);
+
+    width:220px;
+    min-height:180px;
+
+    padding:35px 25px;
+
+    border-radius:30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
     width:220px;
     min-height:180px;
 
@@ -527,9 +551,14 @@ section article ul {
 
 .stat-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-12px) scale(1.03);
 
     border-color:#67c1ff;
+
+    box-shadow:
+    0 0 25px rgba(103,193,255,.35);
+
+}
 
 }
 
@@ -837,5 +866,29 @@ letter-spacing:3px;
 
 }
 
+.stat-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+    left:-50%;
+
+    width:50%;
+    height:300%;
+
+    background:rgba(255,255,255,.15);
+
+    transform:rotate(25deg);
+
+    transition:.7s;
+
+}
+
+
+.stat-card:hover::after{
+
+    left:120%;
 
 }
