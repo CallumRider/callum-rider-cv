@@ -28,6 +28,12 @@ nav{
     align-items:center;
 }
 nav h1{
+    font-size:2rem;
+    letter-spacing:1px;
+    color:white;
+    text-shadow:0 0 15px rgba(103,193,255,.35);
+}
+nav h1{
 
     font-family:"Carter One", system-ui;
     font-size:1.8rem;
