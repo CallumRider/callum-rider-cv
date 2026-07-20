@@ -642,6 +642,8 @@ transparent 45%
 ),
 #12263A;
 
+}
+
 #timeline h2 {
 
     color:white;
@@ -892,6 +894,8 @@ transparent 45%
 .stat-card:hover::after{
 
     left:120%;
+
+}
 
 }
 #stats,
