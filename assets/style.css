@@ -127,16 +127,29 @@ section article,
 section>p,
 .achievement-card{
 
-    background:white;
-    padding:25px;
-    margin:15px 0;
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,1),
+        rgba(245,248,252,1)
+    );
+
+    padding:30px;
+
+    margin:20px 0;
 
     border-radius:30px;
 
+    border:1px solid rgba(255,255,255,.8);
+
     box-shadow:
-    0 10px 25px rgba(0,0,0,.08);
+    0 15px 35px rgba(0,0,0,.08);
 
     transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
 
 }
 
@@ -145,13 +158,32 @@ section>p,
 section article:hover,
 .achievement-card:hover{
 
-    transform:translateY(-8px);
+transform:
+translateY(-10px);
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+box-shadow:
+0 20px 45px rgba(0,0,0,.15);
 
 }
 
+section article::before,
+.achievement-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:6px;
+    height:100%;
+
+    background:#67c1ff;
+
+    border-radius:30px 0 0 30px;
+
+}
 
 
 /* ACHIEVEMENTS CAROUSEL */
