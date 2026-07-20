@@ -432,6 +432,7 @@ section article ul {
 .carousel-dots span.active{
     opacity:1;
     transform:scale(1.3);
+}
 /* STATISTICS SECTION */
 
 #stats{
