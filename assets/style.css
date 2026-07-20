@@ -559,3 +559,34 @@ section article ul {
     opacity:.8;
 
 }
+
+.achievement-stat h3{
+
+    font-size:1.8rem;
+
+}
+
+
+.old-result{
+
+    opacity:.5;
+
+    text-decoration:line-through;
+
+}
+
+
+.arrow{
+
+    padding:0 8px;
+
+    color:white;
+
+}
+
+
+.new-result{
+
+    color:#67c1ff;
+
+}
