@@ -156,3 +156,30 @@ counters.forEach(counter => {
 
 });
 
+// Timeline scroll animation
+
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+
+const timelineObserver = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold:0.2
+});
+
+
+timelineItems.forEach(item => {
+
+    timelineObserver.observe(item);
+
+});
