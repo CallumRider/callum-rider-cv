@@ -153,10 +153,7 @@ counters.forEach(counter => {
 
 });
 
-
-});
-
-// Timeline scroll animation
+// Timeline animation
 
 const timelineItems = document.querySelectorAll(".timeline-item");
 
@@ -183,3 +180,6 @@ timelineItems.forEach(item => {
     timelineObserver.observe(item);
 
 });
+});
+
+
