@@ -127,9 +127,16 @@ section article,
 section>p,
 .achievement-card{
 
-background:rgba(255,255,255,.92);
+    background:white;
+    padding:25px;
+    margin:15px 0;
 
-backdrop-filter:blur(10px);
+    border-radius:30px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
 
 }
 
