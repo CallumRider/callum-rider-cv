@@ -49,6 +49,8 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    font-size:1rem;
+    letter-spacing:1px;
     transition:.3s;
 }
 
