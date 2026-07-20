@@ -923,3 +923,22 @@ transparent,
 pointer-events:none;
 
 }
+/* Career Journey heading upgrade */
+#timeline h2 {
+    color:white !important;
+    text-align:center !important;
+    font-size:2rem !important;
+    letter-spacing:3px !important;
+    font-weight:800 !important;
+    margin-bottom:40px !important;
+}
+
+#timeline h2::after {
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#67c1ff;
+    margin:15px auto 0;
+    border-radius:10px;
+}
