@@ -496,23 +496,27 @@ function downloadFile(event) {
 <script src="./assets/script.js"></script>
 
 <script>
-const achievementButtons = document.querySelectorAll(".achievement-toggle");
+document.querySelectorAll(".achievement-toggle").forEach(button => {
 
-achievementButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const card = button.parentElement;
-        const info = card.querySelector(".achievement-info");
+    button.addEventListener("click", function(){
 
-        card.classList.toggle("active");
+        const info = this.nextElementSibling;
+        const arrow = this.querySelector("span");
 
-        if(card.classList.contains("active")){
-            info.style.maxHeight = info.scrollHeight + "px";
-            button.querySelector("span").textContent = "▲";
-        } else {
+        if(info.style.maxHeight){
+
             info.style.maxHeight = null;
-            button.querySelector("span").textContent = "▼";
+            arrow.textContent = "▼";
+
+        } else {
+
+            info.style.maxHeight = info.scrollHeight + "px";
+            arrow.textContent = "▲";
+
         }
+
     });
+
 });
 </script>
 
