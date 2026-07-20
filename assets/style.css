@@ -123,31 +123,16 @@ h1 {
 
 /* BUBBLE SECTIONS */
 
-
 section article,
 section>p,
 .achievement-card{
 
-    background:white;
-    padding:25px;
-    margin:15px 0;
+background:rgba(255,255,255,.92);
 
-    border-radius:30px;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.08);
-
-    transition:.4s;
+backdrop-filter:blur(10px);
 
 }
 
-section article ul{
-    background:none;
-    padding:0;
-    margin:10px 0 0 20px;
-    border-radius:0;
-    box-shadow:none;
-}
 
 
 section article:hover,
@@ -607,8 +592,21 @@ margin-bottom:40px;
 
 .stats-title h2{
 
-font-size:2rem;
-letter-spacing:3px;
+font-size:2.4rem;
+letter-spacing:5px;
+font-weight:900;
+
+background:linear-gradient(
+90deg,
+#ffffff,
+#67c1ff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 25px rgba(103,193,255,.35);
 
 }
 
@@ -628,10 +626,14 @@ letter-spacing:3px;
 ========================= */
 
 #timeline {
-    background:#12263A;
-    padding:70px 8%;
-    overflow:hidden;
-}
+
+background:
+radial-gradient(
+circle at top,
+rgba(103,193,255,.15),
+transparent 45%
+),
+#12263A;
 
 #timeline h2 {
     color:white;
@@ -866,5 +868,34 @@ letter-spacing:3px;
 .stat-card:hover::after{
 
     left:120%;
+
+}
+#stats,
+#timeline{
+
+position:relative;
+
+}
+
+
+#stats::after,
+#timeline::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-1px;
+left:0;
+
+width:100%;
+height:80px;
+
+background:linear-gradient(
+transparent,
+#eef2f6
+);
+
+pointer-events:none;
 
 }
