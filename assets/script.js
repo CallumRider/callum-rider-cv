@@ -185,6 +185,8 @@ timelineItems.forEach(item => {
 const menuButton = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-menuButton.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+if(menuButton){
+    menuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+}
