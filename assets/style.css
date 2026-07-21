@@ -1056,10 +1056,50 @@ nav h1{
     width:30px;
     height:3px;
     background:white;
-    border-radius:10px;
+    border-radius:999px;
     margin:6px 0;
+    transition:0.35s ease;
+}
+/* Hamburger animation */
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
 }
 
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+
+/* Menu opening animation */
+
+nav ul{
+    transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+@media(max-width:800px){
+
+    nav ul{
+        opacity:0;
+        transform:translateY(-15px);
+        pointer-events:none;
+    }
+
+
+    nav ul.active{
+        opacity:1;
+        transform:translateY(0);
+        pointer-events:auto;
+    }
+
+}
 
 /* PHONE VERSION */
 
