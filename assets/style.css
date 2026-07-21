@@ -1061,11 +1061,4 @@ nav h1{
     margin:6px 0;
     transition:.3s;
 }
-@media (max-width:800px){
 
-    .menu-toggle{
-        display:block !important;
-        background:red;
-    }
-
-}
