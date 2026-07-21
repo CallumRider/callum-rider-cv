@@ -1043,22 +1043,31 @@ nav h1{
 ========================== */
 
 .menu-toggle{
-    .menu-toggle{
-    display:block;
+    display:none;
     background:none;
     border:none;
     cursor:pointer;
     padding:8px;
-}
+    z-index:2000;
 }
 
 .menu-toggle span{
     display:block;
-    width:28px;
+    width:30px;
     height:3px;
     background:white;
-    border-radius:999px;
+    border-radius:10px;
     margin:6px 0;
-    transition:.3s;
+}
+
+
+/* PHONE VERSION */
+
+@media (max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
 }
 
