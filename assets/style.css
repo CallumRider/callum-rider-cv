@@ -914,6 +914,9 @@ transparent 45%
     left:20px;
 
 }
+.menu-toggle{
+    display:block;
+}
 
 
 .timeline-item,
@@ -931,6 +934,7 @@ transparent 45%
     text-align:left;
 
 }
+    
 
 
 .timeline-item:nth-child(odd) .timeline-dot,
