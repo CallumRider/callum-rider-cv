@@ -303,40 +303,53 @@ footer{
         display:flex;
         justify-content:space-between;
         align-items:center;
-        width:100%;
     }
 
     .menu-toggle{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:5px;
-        background:none;
-        border:none;
-        cursor:pointer;
-        margin-left:auto;
+        display:block;
     }
 
-    .menu-toggle span{
-        width:28px;
-        height:3px;
-        background:#fff;
-        border-radius:999px;
-    }
 
     nav ul{
         display:none;
+        position:absolute;
+        top:70px;
+        right:20px;
+        background:white;
+        width:220px;
+        border-radius:20px;
+        padding:20px;
+        box-shadow:0 10px 30px rgba(0,0,0,.2);
+        flex-direction:column;
+        gap:15px;
     }
+
+
+    nav ul.active{
+        display:flex;
+    }
+
+
+    nav ul a{
+        color:#12263A;
+    }
+
+
+    nav ul a:hover{
+        color:#67c1ff;
+    }
+
 
     #hero{
         flex-direction:column;
         text-align:center;
     }
 
+
     .hero-text h1{
         font-size:2rem;
     }
+
 }
 
 .achievement-toggle{
