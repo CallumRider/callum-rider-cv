@@ -201,8 +201,10 @@ if(menuButton && navLinks){
 
     menuButton.addEventListener("click",()=>{
 
-        navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
 
-    });
+    menuButton.classList.toggle("active");
+
+});
 
 }
