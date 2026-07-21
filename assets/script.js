@@ -4,7 +4,11 @@ window.addEventListener("load", () => {
 const track = document.getElementById("carousel-track");
 const dotsContainer = document.getElementById("carousel-dots");
 
-if(!track || !dotsContainer) return;
+if(track && dotsContainer){
+
+    // Carousel code goes here
+
+}
 
 
 const totalPhotos = 7;
@@ -181,12 +185,14 @@ timelineItems.forEach(item => {
 });
 
 
-// Mobile menu
+// ======================
+// Mobile Menu
+// ======================
 
 const menuButton = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-if(menuButton && navLinks){
+if (menuButton && navLinks) {
 
     menuButton.addEventListener("click", () => {
 
@@ -195,7 +201,4 @@ if(menuButton && navLinks){
     });
 
 }
-
-});
-
 
