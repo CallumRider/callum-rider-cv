@@ -182,11 +182,19 @@ timelineItems.forEach(item => {
 });
 });
 
-const menuButton = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+window.addEventListener("load", () => {
 
-if(menuButton){
-    menuButton.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-}
+    const menuButton = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    if(menuButton && navLinks){
+
+        menuButton.addEventListener("click", () => {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+    }
+
+});
