@@ -174,12 +174,28 @@ const timelineObserver = new IntersectionObserver(entries => {
     threshold:0.2
 });
 
-
 timelineItems.forEach(item => {
 
     timelineObserver.observe(item);
 
 });
+
+
+// Mobile menu
+
+const menuButton = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+if(menuButton && navLinks){
+
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
 });
 
 window.addEventListener("load", () => {
