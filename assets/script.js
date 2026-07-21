@@ -4,10 +4,8 @@ window.addEventListener("load", () => {
 const track = document.getElementById("carousel-track");
 const dotsContainer = document.getElementById("carousel-dots");
 
-if(!track || !dotsContainer) return;
-
-    // Carousel code goes here
-
+if(!track || !dotsContainer){
+    return;
 }
 
 
