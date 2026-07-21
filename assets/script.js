@@ -185,16 +185,14 @@ timelineItems.forEach(item => {
 window.addEventListener("load", () => {
 
     const menuButton = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav-links");
 
-    if(menuButton && navLinks){
+if(menuButton && navLinks){
 
-        menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click", () => {
 
-            navLinks.classList.toggle("active");
+        navLinks.classList.toggle("active");
 
-        });
+    });
 
-    }
-
-});
+}
