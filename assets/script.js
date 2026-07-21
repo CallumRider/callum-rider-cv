@@ -104,6 +104,7 @@ function restartTimer(){
     },5000);
 
 }
+}
 // Statistics counter animation
 
 const counters = document.querySelectorAll(".counter");
@@ -194,11 +195,13 @@ const navLinks = document.getElementById("nav-links");
 
 if (menuButton && navLinks) {
 
-    menuButton.addEventListener("click", () => {
+   menuButton.addEventListener("click", () => {
 
-        navLinks.classList.toggle("active");
+    console.log("MENU CLICKED");
 
-    });
+    navLinks.classList.toggle("active");
+
+});
 
 }
 
