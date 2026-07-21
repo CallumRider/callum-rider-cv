@@ -297,32 +297,46 @@ footer{
 /* MOBILE */
 
 
-@media(max-width:800px){
+@media (max-width:800px){
 
-nav{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-}
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+    }
 
-.menu-toggle{
-    display:block;
-}
+    .menu-toggle{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:5px;
+        background:none;
+        border:none;
+        cursor:pointer;
+        margin-left:auto;
+    }
 
-nav ul{
-    display:none;
-}
+    .menu-toggle span{
+        width:28px;
+        height:3px;
+        background:#fff;
+        border-radius:999px;
+    }
 
-#hero{
-    flex-direction:column;
-    text-align:center;
-}
+    nav ul{
+        display:none;
+    }
 
-.hero-text h1{
-    font-size:2rem;
-}
+    #hero{
+        flex-direction:column;
+        text-align:center;
+    }
 
+    .hero-text h1{
+        font-size:2rem;
+    }
 }
 
 .achievement-toggle{
