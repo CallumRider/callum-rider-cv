@@ -198,18 +198,4 @@ if(menuButton && navLinks){
 
 });
 
-window.addEventListener("load", () => {
 
-    const menuButton = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
-
-if(menuButton && navLinks){
-
-    menuButton.addEventListener("click", () => {
-
-        navLinks.classList.toggle("active");
-
-    });
-
-}
-});
