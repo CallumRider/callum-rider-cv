@@ -18,7 +18,6 @@ header{
     z-index:1000;
     background:#12263A;
     color:white;
-    padding:15px 8%;
     box-shadow:0 5px 20px rgba(0,0,0,.2);
 }
 
@@ -1116,7 +1115,7 @@ nav ul{
 
 #desktop-header{
 
-    background:#0d1d2d;
+    background:#12263A;
 
     color:white;
 
@@ -1135,21 +1134,15 @@ nav ul{
 
     margin:0;
 
-    font-size:1.8rem;
+    font-family:"Montserrat", Arial, sans-serif;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    letter-spacing:1px;
 
 }
-
-
-.desktop-header-left p{
-
-    margin:3px 0 0;
-
-    color:#67c1ff;
-
-    font-size:.9rem;
-
-}
-
 
 .desktop-header-right{
 
