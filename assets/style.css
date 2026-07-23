@@ -159,8 +159,8 @@ section article li,
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:clamp(15px, 2.2vw, 36px);
-    padding:14px clamp(20px, 7vw, 110px) 16px;
+    gap:clamp(14px, 1.8vw, 30px);
+    padding:10px clamp(20px, 7vw, 110px) 13px;
     border-top:1px solid rgba(255,255,255,.14);
 }
 
@@ -168,11 +168,11 @@ section article li,
     position:relative;
     color:white;
     text-decoration:none;
-    font-size:clamp(.78rem, 1.15vw, .95rem);
+    font-size:clamp(.76rem, 1vw, .88rem);
     font-weight:700;
-    letter-spacing:.35px;
+    letter-spacing:.3px;
     white-space:nowrap;
-    padding:4px 0;
+    padding:3px 0;
 }
 
 .site-desktop-links a::after{
