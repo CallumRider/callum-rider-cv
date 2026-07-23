@@ -1110,4 +1110,82 @@ nav ul{
     }
 
 }
+/* ==========================
+   DESKTOP HEADER
+========================== */
 
+#desktop-header{
+
+    background:#0d1d2d;
+
+    color:white;
+
+    padding:15px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.desktop-header-left h2{
+
+    margin:0;
+
+    font-size:1.8rem;
+
+}
+
+
+.desktop-header-left p{
+
+    margin:3px 0 0;
+
+    color:#67c1ff;
+
+    font-size:.9rem;
+
+}
+
+
+.desktop-header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+.desktop-header-right a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.desktop-header-right a:hover{
+
+    color:#67c1ff;
+
+}
+
+
+@media(max-width:800px){
+
+    #desktop-header{
+
+        display:none;
+
+    }
+
+}
