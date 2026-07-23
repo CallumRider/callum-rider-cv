@@ -266,13 +266,15 @@ function downloadFile(event) {
 
             </div>
 
-            <a class="featured-link" href="#cadets">
+           <button
+    type="button"
+    class="featured-link"
+    id="open-ukroc-case-study"
+>
+    View case study
 
-                View experience
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
 
         </div>
 
@@ -378,6 +380,136 @@ function downloadFile(event) {
     </div>
 
 </section>
+
+  <!-- UKROC Case Study Popup -->
+
+<dialog class="case-study-dialog" id="ukroc-case-study">
+
+    <button
+        type="button"
+        class="case-study-close"
+        id="close-ukroc-case-study"
+        aria-label="Close UKROC case study"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+
+    <div class="case-study-header">
+
+        <span class="case-study-label">
+            NATIONAL ENGINEERING COMPETITION
+        </span>
+
+        <h2>UKROC Rocketry</h2>
+
+        <p>
+            Designing, developing and launching a competition rocket as
+            part of the 295 Squadron RAF Air Cadets rocketry team.
+        </p>
+
+    </div>
+
+
+    <div class="case-study-result">
+
+        <div>
+            <span>FINAL RESULT</span>
+            <strong>Top 10 Nationally</strong>
+        </div>
+
+        <i class="fa-solid fa-rocket"></i>
+
+    </div>
+
+
+    <div class="case-study-grid">
+
+        <article>
+
+            <span class="case-study-number">01</span>
+
+            <h3>The Challenge</h3>
+
+            <p>
+                The team was challenged to develop and launch a competition
+                rocket while meeting the technical requirements of UKROC.
+                This required careful planning, teamwork, testing and the
+                ability to respond when designs or launch preparations
+                needed improving.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span class="case-study-number">02</span>
+
+            <h3>My Contribution</h3>
+
+            <p>
+                I worked alongside other members of the squadron team during
+                the design, development and launch process. I contributed to
+                practical preparation, supported testing and helped the team
+                solve problems as the rocket was prepared for competition.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span class="case-study-number">03</span>
+
+            <h3>The Process</h3>
+
+            <p>
+                The project involved developing ideas, preparing components,
+                checking the rocket before launch and reviewing performance.
+                Each stage required communication, attention to detail and
+                cooperation between members of the team.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span class="case-study-number">04</span>
+
+            <h3>What I Learned</h3>
+
+            <p>
+                The experience strengthened my interest in aerospace
+                engineering and showed me how engineering projects develop
+                through testing and improvement. It also developed my
+                teamwork, resilience and practical problem-solving skills.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="case-study-skills">
+
+        <h3>Skills demonstrated</h3>
+
+        <div>
+
+            <span>Engineering Design</span>
+            <span>Testing</span>
+            <span>Teamwork</span>
+            <span>Problem-Solving</span>
+            <span>Communication</span>
+            <span>Attention to Detail</span>
+
+        </div>
+
+    </div>
+
+</dialog>
 
     <!-- About -->
 
