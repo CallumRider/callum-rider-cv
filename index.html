@@ -27,67 +27,100 @@
 </head>
 <body>
 
-<header id="desktop-header">
+<header id="site-header">
 
-    <div class="header-top">
+    <!-- DESKTOP HEADER -->
+    <div class="site-desktop-header">
 
-        <h1>Callum Rider</h1>
+        <div class="site-top-row">
 
-        <div class="header-contact">
-
-            <a href="mailto:callumrider@icloud.com">
-                <i class="fa-solid fa-envelope"></i> Email
+            <a class="site-desktop-name" href="#hero">
+                Callum Rider
             </a>
 
-            <a href="tel:07398156901">
-                <i class="fa-solid fa-phone"></i> Phone
-            </a>
+            <div class="site-contact-links">
 
-            <a href="https://www.linkedin.com/in/callum-rider-55a797423/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
+                <a href="mailto:callumrider@icloud.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </a>
 
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
+                <a href="tel:07398156901">
+                    <i class="fa-solid fa-phone"></i>
+                    Phone
+                </a>
 
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i> Facebook
-            </a>
+                <a href="https://www.linkedin.com/in/callum-rider-55a797423/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="site-desktop-links">
+
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#cadets">Cadets</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#references">References</a>
+            <a href="#contact">Contact</a>
 
         </div>
 
     </div>
 
 
-    <nav class="desktop-nav">
+    <!-- MOBILE HEADER -->
+    <div class="site-mobile-header">
 
-        <ul>
+        <a class="site-mobile-name" href="#hero">
+            Callum Rider
+        </a>
 
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#cadets">Cadets</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#references">References</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <button
+            class="site-menu-button"
+            id="site-menu-button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="site-mobile-menu">
 
-        </ul>
+            <span></span>
+            <span></span>
+            <span></span>
 
-    </nav>
+        </button>
 
+        <div class="site-mobile-menu" id="site-mobile-menu">
 
-   <div class="mobile-name">
-    Callum Rider
-</div>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#cadets">Cadets</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#references">References</a>
+            <a href="#contact">Contact</a>
 
-<button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        </div>
 
+    </div>
 
 </header>
 <main>
