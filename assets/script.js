@@ -225,3 +225,64 @@ if (siteMenuButton && siteMobileMenu) {
     });
 
 }
+// ======================
+// UKROC CASE STUDY
+// ======================
+
+const ukrocDialog =
+document.getElementById("ukroc-case-study");
+
+const openUkrocButton =
+document.getElementById("open-ukroc-case-study");
+
+const closeUkrocButton =
+document.getElementById("close-ukroc-case-study");
+
+
+if (ukrocDialog && openUkrocButton && closeUkrocButton) {
+
+    function closeUkrocCaseStudy() {
+
+        ukrocDialog.close();
+
+    }
+
+
+    openUkrocButton.addEventListener("click", () => {
+
+        ukrocDialog.showModal();
+
+        document.body.classList.add("dialog-open");
+
+    });
+
+
+    closeUkrocButton.addEventListener("click", closeUkrocCaseStudy);
+
+
+    ukrocDialog.addEventListener("close", () => {
+
+        document.body.classList.remove("dialog-open");
+
+    });
+
+
+    ukrocDialog.addEventListener("click", event => {
+
+        const box = ukrocDialog.getBoundingClientRect();
+
+        const clickedOutside =
+            event.clientX < box.left ||
+            event.clientX > box.right ||
+            event.clientY < box.top ||
+            event.clientY > box.bottom;
+
+        if (clickedOutside) {
+
+            closeUkrocCaseStudy();
+
+        }
+
+    });
+
+}
