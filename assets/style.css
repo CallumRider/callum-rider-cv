@@ -1110,87 +1110,135 @@ nav ul{
 
 }
 /* ==========================
-   DESKTOP HEADER
+   PROFESSIONAL HEADER
 ========================== */
+
 
 #desktop-header{
 
     background:#12263A;
-
     color:white;
+    padding:20px 8% 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
 
-    padding:15px 8%;
+}
+
+
+.header-top{
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
 }
 
 
-.desktop-header-left h2{
-
-    margin:0;
-
-    font-family:"Montserrat", Arial, sans-serif;
+.header-top h1{
 
     font-size:3rem;
-
     font-weight:800;
-
     letter-spacing:1px;
 
 }
 
-.desktop-header-right{
+
+.header-contact{
 
     display:flex;
-
-    align-items:center;
-
-    gap:20px;
+    gap:25px;
 
 }
 
 
-.desktop-header-right a{
+.header-contact a{
 
     color:white;
-
     text-decoration:none;
-
-    transition:.3s;
+    font-weight:600;
+    font-size:1rem;
 
 }
 
 
-.desktop-header-right a:hover{
+.header-contact i{
+
+    color:#67c1ff;
+    margin-right:6px;
+
+}
+
+
+.header-contact a:hover{
 
     color:#67c1ff;
 
 }
 
 
+
+.desktop-nav{
+
+    margin-top:20px;
+
+}
+
+
+.desktop-nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+    padding-bottom:15px;
+
+}
+
+
+.desktop-nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+
+}
+
+
+.desktop-nav a:hover{
+
+    color:#67c1ff;
+
+}
+
+
+
+/* MOBILE */
+
 @media(max-width:800px){
 
-    #desktop-header{
 
-        display:none;
+#desktop-header{
 
-    }
+    padding:10px 20px;
+    height:55px;
 
 }
 
-nav{
-    background:#12263A;
-    padding:15px 8%;
-    border-top:1px solid rgba(255,255,255,.15);
+
+.header-top,
+.desktop-nav{
+
+    display:none;
+
 }
 
 
-nav ul{
-    justify-content:center;
-    width:100%;
+.menu-toggle{
+
+    display:block;
+
+}
+
+
 }
