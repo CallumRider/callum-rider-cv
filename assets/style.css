@@ -1138,7 +1138,7 @@ nav ul{
 
 .header-top h1{
 
-    font-size:3rem;
+    font-size:2.6rem;
     font-weight:800;
     letter-spacing:1px;
 
@@ -1189,12 +1189,48 @@ nav ul{
 .desktop-nav ul{
 
     display:flex;
+    justify-content:center;
     list-style:none;
-    gap:35px;
-    padding-bottom:15px;
+    gap:40px;
+    padding:18px 0;
 
 }
 
+
+.desktop-nav a{
+
+    position:relative;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:1rem;
+
+}
+
+
+.desktop-nav a::after{
+
+    content:"";
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0%;
+    height:3px;
+
+    background:#67c1ff;
+
+    transition:.3s ease;
+
+}
+
+
+.desktop-nav a:hover::after{
+
+    width:100%;
+
+}
 
 .desktop-nav a{
 
@@ -1224,6 +1260,7 @@ nav ul{
     height:55px;
 
 }
+}
 
 
 .header-top,
@@ -1239,6 +1276,32 @@ nav ul{
     display:block;
 
 }
+.mobile-name{
+    display:none;
+    color:white;
+    font-size:1.5rem;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+
+@media(max-width:800px){
+
+    #desktop-header{
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:65px;
+
+    }
+
+
+    .mobile-name{
+
+        display:block;
+
+    }
 
 
 }
