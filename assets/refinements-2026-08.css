@@ -1,0 +1,188 @@
+/* August 2026 refinement pass
+   Keeps the existing portfolio design, but calms the hero and adds the pending GCSE results card. */
+
+/* Remove the CR / 26 label from the desktop wordmark. */
+.site-desktop-name::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* ==================================================
+   CALMER HERO
+================================================== */
+
+#hero {
+    min-height: min(610px, calc(100vh - var(--header-offset)));
+    grid-template-columns: minmax(250px, 0.72fr) minmax(460px, 1.28fr);
+    gap: clamp(42px, 6vw, 72px);
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+#hero::before,
+.hero-image::before {
+    display: none !important;
+}
+
+.hero-image {
+    width: min(100%, 330px);
+}
+
+.hero-image::after {
+    right: -10px;
+    bottom: 18px;
+    padding: 7px 10px;
+    color: var(--navy-700);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 0.63rem;
+    letter-spacing: 0.1em;
+}
+
+.hero-image img {
+    border-radius: 22px;
+    box-shadow: 0 16px 38px rgba(13, 29, 43, 0.14);
+}
+
+.hero-text {
+    max-width: 680px;
+}
+
+.hero-eyebrow {
+    margin-bottom: 14px;
+    color: var(--ink-500) !important;
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+}
+
+.hero-text h1 {
+    font-size: clamp(3rem, 6vw, 4.9rem);
+    letter-spacing: -0.048em;
+    line-height: 0.98;
+}
+
+.hero-text h2 {
+    max-width: 650px;
+    margin: 20px 0 16px;
+    color: var(--ink-700);
+    font-size: clamp(1rem, 2vw, 1.22rem);
+    line-height: 1.48;
+}
+
+.hero-text > p:not(.hero-eyebrow) {
+    max-width: 630px;
+    color: var(--ink-700);
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.hero-actions {
+    margin-top: 28px;
+}
+
+.hero-meta {
+    gap: 9px 16px;
+    margin-top: 22px;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.hero-meta span {
+    font-size: 0.77rem;
+}
+
+.hero-meta i {
+    color: var(--navy-700);
+}
+
+/* ==================================================
+   GCSE RESULTS — PENDING 20 AUGUST 2026
+================================================== */
+
+.gcse-results-card {
+    margin-top: 28px;
+    padding: 24px 26px;
+    background: linear-gradient(135deg, #ffffff, #f7fafc);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue-500);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+}
+
+.gcse-results-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gcse-results-kicker {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--ink-500);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+}
+
+.gcse-results-card h3 {
+    margin: 0;
+    color: var(--navy-800);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.18rem;
+    font-weight: 800;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.gcse-results-card p {
+    max-width: 760px;
+    margin-top: 14px;
+    color: var(--ink-700);
+    font-size: 0.91rem;
+}
+
+.gcse-status {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    color: var(--navy-700);
+    background: var(--blue-100);
+    border: 1px solid #c7e9ff;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+    #hero {
+        min-height: auto;
+        gap: 34px;
+        padding-top: 44px;
+        padding-bottom: 54px;
+    }
+
+    .hero-image {
+        width: min(76vw, 295px);
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2.85rem, 14vw, 4.35rem);
+    }
+
+    .gcse-results-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .gcse-results-card {
+        padding: 21px;
+    }
+}
