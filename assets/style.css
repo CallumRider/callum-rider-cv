@@ -923,7 +923,7 @@ main > section article:hover,
     width: min(var(--content), 100%);
     margin: 0 auto 58px;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 
 .timeline-container {
