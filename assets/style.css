@@ -2135,3 +2135,647 @@ footer {
         transform: none;
     }
 }
+
+
+/* ==================================================
+   2026-08 DE-AI REFINEMENT
+   Cleaner, flatter and more editorial/personal.
+================================================== */
+
+:root {
+    --page: #f4f6f8;
+    --surface-soft: #f7f8fa;
+    --shadow-sm: 0 2px 8px rgba(13, 29, 43, 0.055);
+    --shadow-md: 0 6px 18px rgba(13, 29, 43, 0.08);
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+body {
+    background: var(--page);
+}
+
+#site-header {
+    background: var(--navy-950);
+    border-bottom-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 2px 10px rgba(5, 14, 22, 0.12);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.site-contact-links a,
+.site-mobile-menu a {
+    border-radius: 4px;
+}
+
+main > section {
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+main > section > h2,
+.featured-heading h2 {
+    letter-spacing: -0.028em;
+}
+
+main > section > h2 {
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+}
+
+.section-kicker,
+.featured-kicker,
+.case-study-label {
+    gap: 0;
+    color: var(--ink-500);
+    font-size: 0.69rem;
+    letter-spacing: 0.11em;
+}
+
+.section-kicker::before,
+.featured-kicker::before,
+.case-study-label::before {
+    display: none;
+}
+
+main > section article,
+.achievement-card,
+.featured-card {
+    border-radius: 7px;
+    box-shadow: none;
+    transition: border-color 160ms ease;
+}
+
+main > section article:hover,
+.achievement-card:hover,
+.featured-card:hover {
+    transform: none;
+    border-color: var(--line-strong);
+    box-shadow: none;
+}
+
+/* Hero: keep personality, remove the over-designed look. */
+#hero {
+    min-height: min(650px, calc(100vh - var(--header-offset)));
+    gap: clamp(44px, 6vw, 78px);
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+#hero::before {
+    width: 360px;
+    height: 360px;
+    left: -140px;
+    border-color: rgba(103, 193, 255, 0.22);
+    box-shadow: none;
+}
+
+.hero-image {
+    width: min(100%, 335px);
+}
+
+.hero-image::before {
+    left: -13px;
+    top: -13px;
+    width: 62px;
+    height: 62px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+}
+
+.hero-image img {
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(13, 29, 43, 0.14);
+}
+
+.hero-eyebrow {
+    margin-bottom: 12px;
+    color: var(--ink-500) !important;
+    font-size: 0.69rem;
+    letter-spacing: 0.11em;
+}
+
+.hero-text h1 {
+    font-size: clamp(3.15rem, 6.2vw, 5.15rem);
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+.hero-text h2 {
+    margin-top: 18px;
+    color: var(--ink-700);
+}
+
+.hero-text > p:not(.hero-eyebrow) {
+    max-width: 640px;
+    font-size: 0.99rem;
+}
+
+.button,
+.featured-link {
+    border-radius: 5px;
+    transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.button:hover,
+.featured-link:hover {
+    transform: none;
+}
+
+.button-secondary {
+    background: transparent;
+}
+
+.hero-meta span {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+/* Career highlights: solid band, no faux-tech grid/glow. */
+#stats {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background: var(--navy-950);
+}
+
+#stats::before {
+    display: none;
+}
+
+.stats-title {
+    margin-bottom: 24px;
+}
+
+.stats-title h2 {
+    font-size: clamp(1.45rem, 2.4vw, 2rem);
+    letter-spacing: 0.02em;
+}
+
+.stats-subtitle {
+    color: rgba(255, 255, 255, 0.5) !important;
+    letter-spacing: 0.1em;
+}
+
+.stats-container {
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.stat-card {
+    min-height: 124px;
+    padding: 22px 20px;
+    background: transparent;
+    border: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+}
+
+.stat-card:last-child {
+    border-right: 0;
+}
+
+.stat-card:hover {
+    transform: none;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card h3 {
+    font-size: clamp(1.9rem, 3vw, 2.75rem);
+}
+
+.stat-card p {
+    margin-top: 10px;
+    letter-spacing: 0.09em;
+}
+
+/* Featured work: less template-like, more editorial. */
+#featured-work {
+    padding-top: 80px;
+}
+
+.featured-heading {
+    margin-bottom: 28px;
+}
+
+.featured-heading h2 {
+    font-size: clamp(2rem, 3.8vw, 3rem);
+}
+
+.featured-grid {
+    gap: 14px;
+}
+
+.featured-card {
+    min-height: 390px;
+    padding: 24px;
+}
+
+.featured-card::after,
+.featured-card-primary::before {
+    display: none;
+}
+
+.featured-card-primary {
+    background: var(--navy-800);
+    border-color: var(--navy-800);
+}
+
+.featured-label {
+    letter-spacing: 0.08em;
+}
+
+.featured-card-top i {
+    font-size: 1rem;
+}
+
+.featured-card h3 {
+    margin-top: 24px;
+    font-size: 1.34rem;
+}
+
+.featured-skills {
+    gap: 12px;
+}
+
+.featured-skills span,
+.case-study-skills span,
+.featured-card-primary .featured-skills span {
+    padding: 0;
+    color: var(--ink-500);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 0.69rem;
+}
+
+.featured-card-primary .featured-skills span {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.featured-result {
+    padding-top: 12px;
+}
+
+/* Standard content cards */
+#experience article,
+#cadets article,
+#projects article,
+#references article {
+    background: #fff;
+}
+
+#about > p:first-of-type::before {
+    width: 3px;
+}
+
+/* Timeline: keep the strong section, remove glow/card theatrics. */
+#timeline {
+    padding-top: 78px;
+    padding-bottom: 78px;
+    background: var(--navy-900);
+}
+
+.timeline-container::before {
+    width: 1px;
+    background: rgba(103, 193, 255, 0.55);
+    box-shadow: none;
+}
+
+.timeline-dot {
+    width: 11px;
+    height: 11px;
+    background: var(--navy-900);
+    border: 2px solid var(--blue-500);
+    box-shadow: none;
+}
+
+.timeline-content {
+    padding: 22px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.timeline-content span {
+    color: var(--blue-400);
+    letter-spacing: 0.1em;
+}
+
+.timeline-content p {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Qualifications accordion: restrained list treatment. */
+.achievement-grid {
+    gap: 10px;
+}
+
+.achievement-card {
+    border-radius: 6px;
+}
+
+.achievement-card.active {
+    border-color: var(--line-strong);
+    box-shadow: none;
+}
+
+.achievement-toggle span {
+    width: auto;
+    height: auto;
+    flex-basis: auto;
+    padding: 0;
+    color: var(--ink-500);
+    background: transparent;
+    border-radius: 0;
+}
+
+/* Education summary: simple rows rather than dashboard cards. */
+#education > ul {
+    gap: 0;
+    border-top: 1px solid var(--line);
+}
+
+#education > ul li {
+    min-height: 62px;
+    padding: 14px 16px 14px 28px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#education > ul li::before {
+    left: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: none;
+}
+
+/* GCSEs remain prominent, but now look like a serious qualification. */
+.gcse-results-card {
+    padding: 28px;
+    background: var(--navy-800);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.gcse-results-card::before,
+.gcse-results-card::after {
+    display: none;
+}
+
+.gcse-feature-icon {
+    width: auto;
+    height: auto;
+    display: block;
+    color: var(--blue-400);
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1.05rem;
+}
+
+.gcse-results-kicker {
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.1em;
+}
+
+.gcse-results-card h3 {
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+
+.gcse-status {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.62);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.gcse-summary {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.gcse-summary-card,
+.gcse-summary-primary {
+    min-height: 78px;
+    padding: 14px 16px;
+    background: transparent;
+    border: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+}
+
+.gcse-summary-card:last-child {
+    border-right: 0;
+}
+
+.gcse-summary-card strong,
+.gcse-summary-primary strong {
+    color: #fff;
+    font-size: 1.65rem;
+}
+
+.gcse-summary-card span {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.gcse-results-intro {
+    margin-top: 18px !important;
+    color: rgba(255, 255, 255, 0.66) !important;
+}
+
+.gcse-results-grid {
+    gap: 0;
+    margin-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.gcse-result,
+.gcse-result-highlight {
+    min-height: 54px;
+    padding: 12px 14px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+.gcse-result:nth-child(3n + 1),
+.gcse-result:nth-child(3n + 2) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gcse-result:hover {
+    transform: none;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.gcse-result-highlight {
+    border-left: 3px solid var(--blue-500);
+    background: rgba(103, 193, 255, 0.06);
+}
+
+.gcse-subject,
+.gcse-result-highlight .gcse-subject {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.gcse-grade,
+.gcse-result-highlight .gcse-grade {
+    color: #fff;
+    font-size: 1.22rem;
+}
+
+/* Contact/footer: remove extra UI feel. */
+#contact {
+    background: var(--navy-950);
+}
+
+.contact-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .stat-card {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .gcse-result:nth-child(3n + 1),
+    .gcse-result:nth-child(3n + 2) {
+        border-right: 0;
+    }
+
+    .gcse-result:nth-child(odd) {
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (max-width: 760px) {
+    main > section {
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+
+    #hero {
+        gap: 34px;
+    }
+
+    #hero::before {
+        width: 250px;
+        height: 250px;
+        left: -150px;
+    }
+
+    .hero-image {
+        width: min(76vw, 300px);
+    }
+
+    .stats-container {
+        gap: 0;
+    }
+
+    .stat-card {
+        min-height: 108px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .gcse-results-card {
+        padding: 20px;
+        border-radius: 7px;
+    }
+
+    .gcse-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gcse-summary-primary {
+        grid-column: 1 / -1;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gcse-summary-card {
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 520px) {
+    .gcse-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gcse-result,
+    .gcse-result:nth-child(odd),
+    .gcse-result:nth-child(3n + 1),
+    .gcse-result:nth-child(3n + 2) {
+        border-right: 0;
+    }
+}
+
+/* Final restraint pass */
+#about > p:first-of-type {
+    padding-top: 28px;
+}
+
+#about > p:first-of-type::before {
+    display: none;
+}
+
+.case-study-dialog {
+    background: #f7f8fa;
+    border-radius: 8px;
+    box-shadow: 0 18px 60px rgba(3, 10, 16, 0.28);
+}
+
+.case-study-dialog::backdrop {
+    background: rgba(5, 14, 22, 0.68);
+    backdrop-filter: none;
+}
+
+.case-study-close {
+    border-radius: 4px;
+}
+
+.case-study-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.case-study-result {
+    border-radius: 5px;
+}
+
+.case-study-gallery figure,
+.case-study-grid article {
+    border-radius: 5px;
+}
+
+.case-study-grid article {
+    box-shadow: none;
+}
+
+.site-mobile-menu {
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 8px 20px rgba(5, 14, 22, 0.18);
+}
+
+.site-mobile-menu a {
+    border-radius: 3px;
+}
