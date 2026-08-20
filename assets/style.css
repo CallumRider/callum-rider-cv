@@ -1833,8 +1833,9 @@ footer {
     }
 }
 
+
 /* ==================================================
-   GCSE RESULTS — PENDING 20 AUGUST 2026
+   GCSE RESULTS — AUGUST 2026
 ================================================== */
 
 .gcse-results-card {
@@ -1896,6 +1897,56 @@ footer {
     white-space: nowrap;
 }
 
+.gcse-results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.gcse-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 58px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.gcse-result-highlight {
+    background: var(--blue-100);
+    border-color: var(--blue-500);
+    box-shadow: inset 0 0 0 1px rgba(103, 193, 255, 0.12);
+}
+
+.gcse-subject {
+    color: var(--navy-800);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.gcse-grade {
+    flex: 0 0 auto;
+    color: var(--navy-800);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.gcse-result-highlight .gcse-grade {
+    color: var(--blue-600);
+}
+
+@media (max-width: 900px) {
+    .gcse-results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 760px) {
     .gcse-results-header {
         flex-direction: column;
@@ -1904,5 +1955,11 @@ footer {
 
     .gcse-results-card {
         padding: 21px;
+    }
+}
+
+@media (max-width: 520px) {
+    .gcse-results-grid {
+        grid-template-columns: 1fr;
     }
 }
