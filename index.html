@@ -44,7 +44,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
-    <link href="./assets/style.css?v=32" rel="stylesheet">
+    <link href="./assets/style.css?v=33" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEVHTNDR7W"></script>
@@ -1110,7 +1110,95 @@
         <p>&copy; 2026 Callum Rider. All Rights Reserved.</p>
     </footer>
 
+
+    <!-- Portfolio question assistant -->
+    <button
+        class="portfolio-chat-launcher"
+        id="portfolio-chat-launcher"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="portfolio-chat-panel"
+        aria-expanded="false"
+    >
+        <i class="fa-regular fa-message" aria-hidden="true"></i>
+        <span>Ask about Callum</span>
+    </button>
+
+    <section
+        class="portfolio-chat-panel"
+        id="portfolio-chat-panel"
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="portfolio-chat-title"
+        aria-hidden="true"
+    >
+        <header class="portfolio-chat-header">
+            <div>
+                <span class="portfolio-chat-kicker">PORTFOLIO ASSISTANT</span>
+                <h2 id="portfolio-chat-title">Ask about Callum</h2>
+            </div>
+
+            <button
+                class="portfolio-chat-close"
+                id="portfolio-chat-close"
+                type="button"
+                aria-label="Close question assistant"
+            >
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </header>
+
+        <div
+            class="portfolio-chat-messages"
+            id="portfolio-chat-messages"
+            aria-live="polite"
+            aria-label="Conversation"
+        >
+            <div class="portfolio-chat-message portfolio-chat-message-assistant">
+                <p>
+                    Hi — I can help you quickly find information about Callum's education,
+                    Air Cadets experience, projects, qualifications and work experience.
+                </p>
+            </div>
+        </div>
+
+        <div class="portfolio-chat-suggestions" id="portfolio-chat-suggestions" aria-label="Suggested questions">
+            <button type="button" data-chat-question="What aerospace experience does Callum have?">
+                Aerospace experience
+            </button>
+            <button type="button" data-chat-question="What GCSE results did Callum get?">
+                GCSE results
+            </button>
+            <button type="button" data-chat-question="Tell me about Callum's leadership experience.">
+                Leadership
+            </button>
+            <button type="button" data-chat-question="What did Callum achieve in UKROC?">
+                UKROC
+            </button>
+        </div>
+
+        <form class="portfolio-chat-form" id="portfolio-chat-form">
+            <label class="sr-only" for="portfolio-chat-input">Ask a question about Callum</label>
+            <input
+                id="portfolio-chat-input"
+                name="question"
+                type="text"
+                maxlength="300"
+                autocomplete="off"
+                placeholder="Ask about experience, grades, projects..."
+            >
+            <button type="submit" aria-label="Send question">
+                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            </button>
+        </form>
+
+        <p class="portfolio-chat-note">
+            Answers are limited to information in this portfolio.
+        </p>
+    </section>
+
     <script src="./assets/script.js?v=31"></script>
+    <script src="./assets/chatbot.js?v=1"></script>
 
 
 </body>
