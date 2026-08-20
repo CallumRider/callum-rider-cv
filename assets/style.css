@@ -1835,51 +1835,102 @@ footer {
 
 
 /* ==================================================
-   GCSE RESULTS — AUGUST 2026
+   GCSE RESULTS — FEATURED QUALIFICATION
 ================================================== */
 
 .gcse-results-card {
-    margin-top: 28px;
-    padding: 24px 26px;
-    background: linear-gradient(135deg, #ffffff, #f7fafc);
-    border: 1px solid var(--line);
-    border-left: 4px solid var(--blue-500);
-    border-radius: 14px;
-    box-shadow: var(--shadow-sm);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin-top: 32px;
+    padding: 30px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 86% 12%, rgba(103, 193, 255, 0.18), transparent 30%),
+        linear-gradient(135deg, #081725 0%, #12263a 56%, #173c5b 100%);
+    border: 1px solid rgba(143, 210, 255, 0.24);
+    border-radius: 18px;
+    box-shadow: 0 22px 50px rgba(7, 22, 34, 0.18);
+}
+
+.gcse-results-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.42;
+    background:
+        linear-gradient(rgba(103, 193, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(103, 193, 255, 0.045) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0.5) 46%, transparent 78%);
+}
+
+.gcse-results-card::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -68px;
+    bottom: -112px;
+    width: 270px;
+    height: 270px;
+    border: 1px solid rgba(103, 193, 255, 0.16);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 36px rgba(103, 193, 255, 0.035),
+        0 0 0 74px rgba(103, 193, 255, 0.022);
 }
 
 .gcse-results-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 24px;
+}
+
+.gcse-title-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.gcse-feature-icon {
+    flex: 0 0 auto;
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    color: var(--navy-900);
+    background: var(--blue-500);
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(103, 193, 255, 0.2);
+    font-size: 1.25rem;
 }
 
 .gcse-results-kicker {
     display: block;
     margin-bottom: 5px;
-    color: var(--ink-500);
+    color: #9ed8ff;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 0.66rem;
+    font-size: 0.67rem;
     font-weight: 800;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.16em;
 }
 
 .gcse-results-card h3 {
     margin: 0;
-    color: var(--navy-800);
+    color: #fff;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 1.18rem;
+    font-size: clamp(1.45rem, 2vw, 1.85rem);
     font-weight: 800;
-    letter-spacing: normal;
+    letter-spacing: -0.02em;
     text-transform: none;
 }
 
-.gcse-results-card p {
-    max-width: 760px;
-    margin-top: 14px;
-    color: var(--ink-700);
-    font-size: 0.91rem;
+.gcse-results-meta {
+    margin: 5px 0 0 !important;
+    color: rgba(255, 255, 255, 0.62) !important;
+    font-size: 0.79rem !important;
 }
 
 .gcse-status {
@@ -1887,21 +1938,76 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    padding: 7px 10px;
-    color: var(--navy-700);
-    background: var(--blue-100);
-    border: 1px solid #c7e9ff;
+    padding: 8px 11px;
+    color: #e8f7ff;
+    background: rgba(103, 193, 255, 0.12);
+    border: 1px solid rgba(143, 210, 255, 0.25);
     border-radius: 999px;
     font-size: 0.72rem;
     font-weight: 750;
     white-space: nowrap;
 }
 
+.gcse-status i {
+    color: var(--blue-400);
+}
+
+.gcse-summary {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.gcse-summary-card {
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.065);
+    border: 1px solid rgba(143, 210, 255, 0.15);
+    border-radius: 12px;
+}
+
+.gcse-summary-card strong {
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.95rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.gcse-summary-card span {
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.gcse-summary-primary {
+    background: linear-gradient(135deg, rgba(103, 193, 255, 0.23), rgba(103, 193, 255, 0.09));
+    border-color: rgba(143, 210, 255, 0.34);
+}
+
+.gcse-summary-primary strong {
+    color: #bce5ff;
+}
+
+.gcse-results-intro {
+    max-width: 780px !important;
+    margin: 20px 0 0 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.65;
+}
+
 .gcse-results-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .gcse-result {
@@ -1909,57 +2015,123 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    min-height: 58px;
+    min-height: 60px;
     padding: 14px 16px;
-    background: #fff;
-    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.075);
+    border: 1px solid rgba(143, 210, 255, 0.14);
     border-radius: 10px;
+    transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.gcse-result:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.105);
+    border-color: rgba(143, 210, 255, 0.25);
 }
 
 .gcse-result-highlight {
-    background: var(--blue-100);
-    border-color: var(--blue-500);
-    box-shadow: inset 0 0 0 1px rgba(103, 193, 255, 0.12);
+    background: linear-gradient(135deg, #67c1ff 0%, #8fd2ff 100%);
+    border-color: #9edcff;
+    box-shadow: 0 12px 28px rgba(36, 132, 194, 0.23);
 }
 
 .gcse-subject {
-    color: var(--navy-800);
-    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.84rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
 .gcse-grade {
     flex: 0 0 auto;
-    color: var(--navy-800);
+    color: #fff;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 800;
 }
 
+.gcse-result-highlight .gcse-subject,
 .gcse-result-highlight .gcse-grade {
-    color: var(--blue-600);
+    color: var(--navy-900);
 }
 
 @media (max-width: 900px) {
+    .gcse-results-card {
+        padding: 26px;
+    }
+
     .gcse-results-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 760px) {
-    .gcse-results-header {
-        flex-direction: column;
-        gap: 12px;
+    .gcse-results-card {
+        margin-top: 26px;
+        padding: 22px;
+        border-radius: 16px;
     }
 
-    .gcse-results-card {
-        padding: 21px;
+    .gcse-results-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .gcse-title-group {
+        align-items: flex-start;
+    }
+
+    .gcse-feature-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    .gcse-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gcse-summary-primary {
+        grid-column: 1 / -1;
+    }
+
+    .gcse-summary-card {
+        min-height: 78px;
+        padding: 14px 15px;
+    }
+
+    .gcse-summary-card strong {
+        font-size: 1.65rem;
     }
 }
 
 @media (max-width: 520px) {
+    .gcse-results-card {
+        padding: 19px;
+    }
+
     .gcse-results-grid {
         grid-template-columns: 1fr;
+    }
+
+    .gcse-result {
+        min-height: 56px;
+    }
+
+    .gcse-results-card::after {
+        width: 220px;
+        height: 220px;
+        right: -100px;
+        bottom: -105px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gcse-result {
+        transition: none;
+    }
+
+    .gcse-result:hover {
+        transform: none;
     }
 }
